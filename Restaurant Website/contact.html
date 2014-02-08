@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			div
+			{
+				border-radius: 15px / 15px ;
+			}
+			div#shadow
+			{
+				box-shadow:0px 0px 15px 2px #151515;
+			}
+			iframe
+			{ 
+				border:3px solid #DF0101;
+				border-radius: 20px / 20px ;
+				box-shadow:0px 0px 15px 5px #151515;
+			}
+		</style>
+		<link type='text/css' rel='stylesheet' href='style.css'>
+	</head>
+	<body>
+		<img src="pizza.jpg" alt="La Toscana" width="300" height="150">
+			
+		<div id="shadow" class="hyper" style="position:absolute; left:20%; margin-left:-100px; width:1000px; height:150px; background-color:#2A120A; border: 1px; visibility:visible">
+			<h1 class="title"> <font color="green">La T</font><font color="white">osc</font><font color="red">ana</font> </h1>
+			<h3 class="hyper">Italian Restuarant & Pizzaria</h3>
+			
+			<div class="hyper" style="position:absolute; left:50%; margin-left:-275px; width:500px; height: 20px; background-color:white; border: 1px; visibility:visible">			
+				<a style="text-decoration:none" href="homepage.html">HOME</a>
+				<a style="text-decoration:none; margin-left:25px" href="menu.html">MENU</a>
+				<a style="text-decoration:none; margin-left:25px" href="contact.html">CONTACT</a>
+				<a style="text-decoration:none; margin-left:25px" href="booking.html">BOOKING</a>		
+			</div>
+			
+		</div>
+		
+		<div id="shadow" style="position:absolute; left:45%; top:85%; margin-left:-300px; margin-top:-225px; width:700px; height:975px; background-color:white; border: 1px; visibility:visible">
+		
+			<p> <b>
+					<div class="text" style="position:center; width:700px; height: 25px; background-color:#2A120A; border: 1px; visibility:visible">
+					<h3>Restuarant Details</h3>
+					</div>
+					<br>
+					
+					<font class="writing"> 
+						La Toscana is located on:<br>Bachelors Walk, Dublin City Center, Co.Dublin, Ireland<br>(beside Aldi). <br><br>
+						OPENING TIMES:<br>
+						Mon-Sun: 4:30pm-12:00am <br><br>
+						Landline: 01-681543 <br>
+						Email: latoscana-reservation@gmail.com<br><br>
+					</font>
+				</b>
+				
+				<form name="feedback" method="post" class="writing">
+				<b>
+					<div class="text" style="position:center; width:700px; height: 25px; background-color:#2A120A; border: 1px; visibility:visible">
+					<h3>Email Feedback</h3>
+					</div>
+					
+					<br>First Name:<input type="text" name="firstName" size="15" maxlength="15"/>*<br>
+					Last Name:<input type="text" name="lastName" size="15" maxlength="15" />*<br>
+					Telephone/Mobile:<input type="text" name="number" size="15" maxlength="15" />*<br>
+					Comments:*<br><textarea name="notes" rows="5" cols="30" style="margin: 2px; width: 217px; height: 70px;"></textarea><br>
+					
+					<button onclick="email_function()">Email</button>
+					<input type="reset" value="Clear">
+					
+					
+					<script>
+						function email_function()
+						{
+							alert("Thank you for your feedback!");
+						}
+					</script>
+			
+					<p>* Required fields</p>
+				</b>
+				</form>
+				
+				<div class="text" style="position:center; width:700px; height: 25px; background-color:#2A120A; border: 1px; visibility:visible">
+					<h3>Map</h3>
+				</div>
+				<br>
+				<iframe width="300" height="275" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.ie/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Bachelors+Walk,+Dublin&amp;aq=0&amp;oq=bac&amp;sll=53.324312,-6.251907&amp;sspn=0.23828,0.676346&amp;ie=UTF8&amp;hq=&amp;hnear=Bachelors+Walk,+Dublin,+County+Dublin&amp;t=m&amp;ll=53.348604,-6.26092&amp;spn=0.01409,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+				<h5><a style="text-decoration:none" href="http://maps.google.ie/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Bachelors+Walk,+Dublin&amp;aq=0&amp;oq=bac&amp;sll=53.324312,-6.251907&amp;sspn=0.23828,0.676346&amp;ie=UTF8&amp;hq=&amp;hnear=Bachelors+Walk,+Dublin,+County+Dublin&amp;t=m&amp;ll=53.348604,-6.26092&amp;spn=0.01409,0.025663&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></h5>
+			</p>
+			
+			<p class="copy">
+				&copy; 2013 La Toscana Italian Restaurant & Pizzaria - Web Design by Blue Dragon
+			</p>
+		
+		</div>
+	</body>
+</html>

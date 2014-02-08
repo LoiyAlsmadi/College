@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			div
+			{
+				border-radius: 15px / 15px ;
+			}
+			div#shadow
+			{
+				box-shadow:0px 0px 15px 2px #151515;
+			}
+		</style>
+		<link type='text/css' rel='stylesheet' href='style.css'>
+	</head>
+	<body>
+		<img src="pizza.jpg" alt="La Toscana" width="300" height="150">
+		
+		<div id="shadow" class="hyper" style="position:absolute; left:20%; margin-left:-100px; width:1000px; height:150px; background-color:#2A120A; border: 1px; visibility:visible">
+			<h1 class="title"> <font color="green">La T</font><font color="white">osc</font><font color="red">ana</font> </h1>
+			<h3 class="hyper">Italian Restuarant & Pizzaria</h3>
+			
+			<div class="hyper" style="position:absolute; left:50%; margin-left:-275px; width:500px; height: 20px; background-color:white; border: 1px; visibility:visible">			
+				<a style="text-decoration:none" href="homepage.html">HOME</a>
+				<a style="text-decoration:none; margin-left:25px" href="menu.html">MENU</a>
+				<a style="text-decoration:none; margin-left:25px" href="contact.html">CONTACT</a>
+				<a style="text-decoration:none; margin-left:25px" href="booking.html">BOOKING</a>	
+			</div>
+			
+		</div>
+		
+		<div id="shadow" style="position:absolute; left:45%; top:85%; margin-left:-300px; margin-top:-225px; width:700px; height:520px; background-color:white; border: 1px; visibility:visible">
+			<b>	
+			<div class="text" style="position:center; width:700px; height: 25px; background-color:#2A120A; border: 1px; visibility:visible">
+			<h3>Reservation Details</h3>
+			</div>
+			
+			<form name="booking" method="post" class="writing">
+				<br>Number of people:
+				<select>
+					<option value="partysize">-choose number of people-</option>
+					<option value="one">1</option>
+					<option value="two">2</option>
+					<option value="three">3</option>
+					<option value="four">4</option>
+					<option value="five">5</option>
+					<option value="six">6</option>
+					<option value="seven">7</option>
+					<option value="eight">8</option>
+					<option value="nine">9</option>
+					<option value="ten">10</option>
+				</select>*<br>
+				Date:
+				<input type="date" name="bookingdate">*<br>
+				Time:
+				<select>
+					<option value="time">-choose time-</option>
+					<option value="halffour">4:30</option>
+					<option value="two">5:00</option>
+					<option value="three">5:30</option>
+					<option value="four">6:00</option>
+					<option value="five">6:30</option>
+					<option value="six">7:00</option>
+					<option value="seven">7:30</option>
+					<option value="eight">8:00</option>
+					<option value="nine">8:30</option>
+					<option value="ten">9:00</option>
+					<option value="eleven">9:30</option>
+					<option value="tweleve">10:00</option>
+					<option value="thirteen">10:30</option>
+					<option value="fourteen">11:00</option>
+				</select>*<br><br>
+					
+				<div class="text" style="position:center; width:700px; height: 25px; background-color:#2A120A; border: 1px; visibility:visible">
+				<h3>Personal Details</h3>
+				</div>
+				
+				<br>First Name:<input type="text" name="firstName" size="15" maxlength="15"/>*<br>
+				Last Name:<input type="text" name="lastName" size="15" maxlength="15" />*<br>
+				Telephone/Mobile:<input type="text" name="number" size="15" maxlength="15" />*<br>
+				Email:<input type="email" name="email" value="example123@gmail.com" size="30" maxlength="30" />*<br>
+				Comments:<br><textarea name="notes" rows="5" cols="30" style="margin: 2px; width: 217px; height: 70px;"></textarea><br>
+				
+			</b>
+				
+				<button onclick="validation_function()">Book Table</button>
+				<input type="reset" value="Reset Booking">
+				
+				
+				<script>
+					function validation_function()
+					{
+						alert("Thank you for booking! We will be waiting to see you soon.");
+					}
+				</script>
+		
+				<p>* Required fields<p>
+			</form>	
+			
+			<br>
+			<p class="copy">
+				&copy; 2013 La Toscana Italian Restaurant & Pizzaria - Web Design by Blue Dragon
+			</p>
+		
+		</div>
+	</body>
+</html>

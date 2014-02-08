@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			<!--
+			var image1=new Image()
+			image1.src="manager.jpg"
+			var image2=new Image()
+			image2.src="restuarant.jpg"
+			var image3=new Image()
+			image3.src="table.jpg"
+			var image4=new Image()
+			image4.src="food.jpg"
+			//-->
+		</script>
+		<style>
+			img#show
+			{ 
+				border:3px solid #DF0101;
+				border-radius: 20px / 20px ;
+				box-shadow:0px 0px 15px 5px #151515;
+			}
+			div
+			{
+				border-radius: 15px / 15px ;
+			}
+			div#shadow
+			{
+				box-shadow:0px 0px 15px 2px #151515;
+			}
+		</style>
+		<link type='text/css' rel='stylesheet' href='style.css'>
+	</head>
+	<body>
+		<img src="pizza.jpg" alt="La Toscana" width="300" height="150" />
+			
+		<div id="shadow" class="hyper" style="position:absolute; left:20%; margin-left:-100px; width:1000px; height:150px; background-color:#2A120A; border: 1px; visibility:visible">
+			<h1 class="title"> <font color="green">La T</font><font color="white">osc</font><font color="red">ana</font> </h1>
+			<h3 class="hyper">Italian Restuarant & Pizzaria</h3>
+			
+			<div class="hyper" style="position:absolute; left:50%; margin-left:-275px; width:500px; height: 20px; background-color:white; border: 1px; visibility:visible">			
+				<a style="text-decoration:none" href="homepage.html">HOME</a>
+				<a style="text-decoration:none; margin-left:25px" href="menu.html">MENU</a>
+				<a style="text-decoration:none; margin-left:25px" href="contact.html">CONTACT</a>
+				<a style="text-decoration:none; margin-left:25px" href="booking.html">BOOKING</a>	
+			</div>
+			
+		</div>
+		
+		<div id="shadow" style="position:absolute; left:45%; top:85%; margin-left:-300px; margin-top:-225px; width:700px; height:650px; background-color:white; border: 1px; visibility:visible">
+			<p><b>
+				<div class="text" style="position:center; width:700px; height: 25px; background-color:#2A120A; border: 1px; visibility:visible">
+					<h3>About</h3>
+				</div>
+				<br>
+				<font class="writing"> 
+					La Toscana is a traditional Italian Restaurant & Pizzaria,<br>
+					offering wonderfully delicious food at extravagant prices.<br>
+					Since opening in 2000, La Toscana has won many awards,<br>
+					including "Best Italian Restuarant 2003".<br>
+					We are in the heart of Dublin City. Close to OConnell Bridge,<br>
+					with Dublin hotels and other attractions of Historical<br>
+					and Shopping interests just a short walk away.<br>
+					La Toscana has a breathtaking atmosphere<br>
+					and is a place where you can relax and dine at ease.<br>
+					With succulent and scrumptious food, La Toscana is the place to eat.<br><br>
+				</font>
+				</b>
+			</p>
+			
+			<img id="show" src="manager.jpg" name="slide" width="450" height="300" /><br>
+			
+			<script>
+				<!--
+				var step=1
+				function slideit(){
+				if (!document.images)
+				return
+				document.images.slide.src=eval("image"+step+".src")
+				if (step<4)
+				step++
+				else
+				step=1
+				setTimeout("slideit()",2500)
+				}
+				slideit()
+				//-->
+			</script>
+
+			<br><br>
+			<p class="copy">
+				&copy; 2013 La Toscana Italian Restaurant & Pizzaria - Web Design by Blue Dragon
+			</p>
+		
+		</div>
+	</body>
+</html>

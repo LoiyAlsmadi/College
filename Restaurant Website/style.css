@@ -1,0 +1,36 @@
+body
+{
+	background-color:white;
+	text-align:center;
+	
+	background-image: url("italyflag.jpg");
+	background-size:1300px 1100px;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center; 
+}
+.text 
+{
+	font-family:constantia; 
+	color:white;
+}
+.title
+{
+	font-family:Ravie; 
+}
+.writing
+{
+	font-family:Arial; 
+	color:#2F0B3A;
+}
+.hyper
+{
+	font-family:Times New Roman; 
+	color:white;
+}
+.copy
+{
+		
+	font-family:Arial; 
+	color:black;
+}
