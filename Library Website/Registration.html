@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			img
+			{ 
+				border-radius: 20px / 20px ;
+				position:absolute;
+				left:200px;
+			}
+			form#login
+			{ 
+				position:absolute;
+				right:10px;
+			}
+			div
+			{
+				border-radius: 15px / 15px ;
+			}
+			div#shadow
+			{
+				box-shadow:0px 0px 15px 2px #151515;
+			}
+		</style>
+		<link type='text/css' rel='stylesheet' href='style.css'>
+	</head>
+	<body>
+		<div style="position:relative;">
+			<div id="shadow" style="position:absolute; left:12%; width:1000px; height:160px; background-color:white; border:1px; visibility:visible">
+				
+				<br><a href="Homepage.html"><img src="libraryLOGO.jpg" name="logo" width="500" height="100" /></a>
+				
+				<div class="links" style="position:absolute; left:15%; top:80%; width:700px; height: 20px; background-color:#2ECCFA; border:1px; visibility:visible">			
+					<a style="text-decoration:none" href="Homepage.html">HOME</a>
+					<a style="text-decoration:none; margin-left:25px" href="Login.php">LOGIN</a>
+					<a style="text-decoration:none; margin-left:25px" href="Registration.html">REGISTRATION</a>
+					<a style="text-decoration:none; margin-left:25px" href="Search.php">SEARCH</a>
+					<a style="text-decoration:none; margin-left:25px" href="Account.php">ACCOUNT</a>
+				</div>
+				
+			</div>
+			
+			<div id="shadow" style="position:absolute; left:22%; margin-top:225px; width:700px; height:550px; background-color:white; border:1px; visibility:visible">
+				
+				<form name="reg" action="registration.php" method="post" class="writing">
+				<br>
+				<div class="header" style="position:center; width:700px; height: 25px; background-color:#2ECCFA; border: 1px; visibility:visible">
+					<h3>Account Details</h3>
+				</div>
+					<br>
+					Username:<input type="text" name="username" size="15" maxlength="30" /><br>
+					Password:<input type="password" name="password" size="10" maxlength="6" /><br>
+					Confirm Password:<input type="password" name="confirm_password" size="10" maxlength="6" /><br>
+					<br>
+				<div class="header" style="position:center; width:700px; height: 25px; background-color:#2ECCFA; border: 1px; visibility:visible">
+					<h3>Personal Details</h3>
+				</div>
+					<br>
+					First Name:<input type="text" name="firstname" size="20" maxlength="10"/> <br>
+					Surname:<input type="text" name="surname" size="20" maxlength="10" /><br>
+					Address line 1:<input type="text" name="address_line1" size="30" maxlength="20" /><br>
+					Address line 2:<input type="text" name="address_line2" size="30" maxlength="15" /><br>
+					City:<select name="city">
+							<option value="carlow">Carlow</option>
+							<option value="cavan">Cavan</option>
+							<option value="clare">Clare</option>
+							<option value="cork">Cork</option>
+							<option value="dublin">Dublin</option>
+							<option value="donegal">Donegal</option>
+							<option value="galway">Galway</option>
+							<option value="kerry">Kerry</option>
+							<option value="kildare">Kildare</option>
+							<option value="kilkenny">Kilkenny</option>
+							<option value="laois">Laois</option>
+							<option value="leitrim">Leitrim</option>
+							<option value="limerick">Limerick</option>
+							<option value="longford">Longford</option>
+							<option value="louth">Louth</option>
+							<option value="mayo">Mayo</option>
+							<option value="meath">Meath</option>
+							<option value="monaghan">Monaghan</option>
+							<option value="offaly">Offaly</option>
+							<option value="roscommon">Roscommon</option>
+							<option value="sligo">Sligo</option>
+							<option value="tipperary">Tipperary</option>
+							<option value="waterford">Waterford</option>
+							<option value="westmeath">Westmeath</option>
+							<option value="wexford">Wexford</option>
+							<option value="wicklow">Wicklow</option>
+						</select><br>
+					Telephone:<input type="text" name="telephone" size="15" maxlength="10" /><br>
+					Mobile:<input type="text" name="mobile" size="15" maxlength="10" /><br>
+					
+					<br>
+					<input type="submit"  name="submitButton" value="Create Account" />
+					<input type="reset" value="Reset">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

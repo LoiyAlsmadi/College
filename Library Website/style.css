@@ -1,0 +1,26 @@
+body
+{
+	background-color:white;
+	text-align:center;
+	
+	background-image: url("background.jpg");
+	background-size:1400px 1000px;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center; 
+}
+.writing
+{
+	font-family:Century Schoolbook; 
+	color:#0080FF;
+}
+.links
+{
+	font-family:Calibri; 
+	color:black;
+}
+.header
+{
+	font-family:Century Schoolbook; 
+	color:black;
+}
